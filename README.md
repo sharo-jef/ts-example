@@ -40,7 +40,7 @@ curl localhost:3000/<github.comのユーザ名>
 npm run build
 ````
 
-ビルド後の .js ファイルを実行したい場合は、以下のコマンドを実行する。
+ビルド後の .js ファイルを実行したい場合は、以下のコマンドを実行します。
 
 ```bash
 # Batch
