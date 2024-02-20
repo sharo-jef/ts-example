@@ -5,9 +5,9 @@ export class Router {
   constructor(private readonly app: Express) {}
 
   register() {
-    this.app.get('/', (_req, res) => {
+    this.app.get('/', (req, res) => {
       const controller = new RequestController();
-      controller.request(_req, res);
+      controller.request(req, res);
     });
     this.app.get('/:username', (req, res) => {
       const controller = new RequestController();
