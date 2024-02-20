@@ -7,4 +7,5 @@ function getEnv(key: string): string | undefined {
 
 export default {
   NODE_ENV: getEnv('NODE_ENV'),
+  PORT: getEnv('PORT'),
 };

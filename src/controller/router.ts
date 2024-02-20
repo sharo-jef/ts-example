@@ -1,4 +1,17 @@
+import { Express } from 'express';
+import { RequestController } from './request';
+
 export class Router {
-  // In the case of event-driven, call the method of each Controller
-  // register() {}
+  constructor(private readonly app: Express) {}
+
+  register() {
+    this.app.get('/', (_req, res) => {
+      const controller = new RequestController();
+      controller.request(_req, res);
+    });
+    this.app.get('/:username', (req, res) => {
+      const controller = new RequestController();
+      controller.request(req, res);
+    });
+  }
 }
