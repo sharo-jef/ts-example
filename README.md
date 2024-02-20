@@ -29,7 +29,7 @@ npm run start:b
 npm run start:s
 ```
 
-````bash
+```bash
 curl localhost:3000
 curl localhost:3000/<github.comのユーザ名>
 ```
@@ -38,7 +38,7 @@ curl localhost:3000/<github.comのユーザ名>
 
 ```bash
 npm run build
-````
+```
 
 ビルド後の .js ファイルを実行したい場合は、以下のコマンドを実行します。
 
