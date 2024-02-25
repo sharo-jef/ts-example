@@ -5,7 +5,7 @@
   "scripts": {
     "start:b": "ts-node src/batch.ts",
     "start:s": "ts-node src/server.ts",
-    "build": "rm -rf dist && node ./build.mjs",
+    "build": "rimraf dist && node ./build.mjs",
     "test": "tsc --noEmit && jest",
     "test:c": "jest --coverage"
   },
@@ -31,6 +31,7 @@
     "eslint-plugin-react": "^7.33.2",
     "jest": "^29.7.0",
     "prettier": "^3.2.5",
+    "rimraf": "^5.0.5",
     "ts-jest": "^29.1.2",
     "ts-node": "^10.9.2"
   }
